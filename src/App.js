@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Header, ScrollToTop} from "./components/components";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import {MainPage} from "./pages/index"
+import {MainPage, NewGame} from "./pages/index"
 
 function App() {
 
@@ -13,6 +13,8 @@ function App() {
       <Router>
             <ScrollToTop/>
             <Route path="/" exact component={MainPage} />
+
+            <Route path="/newGame" exact component={NewGame} />
       </Router>
     <div id="modal-root"></div>
     </div>
