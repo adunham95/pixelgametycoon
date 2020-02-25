@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import {Header, ToggleContent, Modal} from "./components/components"
+import {Header, ScrollToTop} from "./components/components";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import {MainPage} from "./pages/index"
 
 function App() {
 
@@ -8,18 +10,10 @@ function App() {
   return (
     <div className="App">
       <Header/>
-
-    {/* <button onClick={()=> setModalID("true")}>Open Modal</button>
-
-      <ToggleContent
-        isOpen={modalID === "true"}
-        // toggle={show => <button onClick={show}>Open</button>}
-        content={hide => (
-          <Modal close={() => {setModalID("false")}} modalClass={"lifeModal datingModal"}>
-            
-          </Modal>
-        )}
-      /> */}
+      <Router>
+            <ScrollToTop/>
+            <Route path="/" exact component={MainPage} />
+      </Router>
     <div id="modal-root"></div>
     </div>
   );

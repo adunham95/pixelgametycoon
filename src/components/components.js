@@ -1,4 +1,5 @@
 import Header from "./Header";
-import ToggleContent, {Modal} from "./Modal"
+import ToggleContent, {Modal} from "./Modal";
+import ScrollToTop from "./ScrollTop"
 
-export {Header, ToggleContent, Modal};
+export {Header, ToggleContent, Modal, ScrollToTop};
