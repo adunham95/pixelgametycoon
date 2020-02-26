@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Header, ScrollToTop} from "./components/components";
+import {Header, ScrollToTop, Nav} from "./components/components";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import {MainPage, NewGame} from "./pages/index"
 
@@ -9,12 +9,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
       <Router>
-            <ScrollToTop/>
-            <Route path="/" exact component={MainPage} />
+        <Header/>
+        <ScrollToTop/>
+        <Route path="/" exact component={MainPage} />
 
-            <Route path="/newGame" exact component={NewGame} />
+        <Route path="/newGame" exact component={NewGame} />
+
+        <Nav />
       </Router>
     <div id="modal-root"></div>
     </div>
