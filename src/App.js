@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./App.scss"
 import {Header, ScrollToTop, Nav} from "./components/components";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import {MainPage, NewGame} from "./pages/index"
