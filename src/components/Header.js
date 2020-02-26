@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   return (
-    <header>
+    <header className="header">
       <h1>Pixel Games Tycoon</h1>
     </header>
   );

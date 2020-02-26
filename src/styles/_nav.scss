@@ -1,0 +1,21 @@
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: var(--background);
+    }
+    li{
+        padding: 5px 10px;
+        line-height: 1em;
+        font-size: 1.2rem;
+        a{
+            color: var(--text-onBackground);
+            text-decoration: none;
+        }
+    }
+}
